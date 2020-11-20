@@ -24,6 +24,7 @@ name = name.title()
 
 pdf = FPDF()
 
+
 for i in range(1, 12):
     createPage(name, rollNo,i)
 
@@ -53,7 +54,8 @@ nameReader = PyPDF2.PdfFileReader(myNameFile)
 pdfWriter = PyPDF2.PdfFileWriter()
  
 
-pages  = set([3,6,8,13,17,20,22,27,30,33])
+pages  = set([2,5,7,12,16,19,21,26,29,32]) 
+"""PAGE NUMBER STARTS FROM 0 HERE"""
 namePageNumber = 1
 # Loop through all the pagenumbers for the first document
 for pageNum in range(mainReader.numPages):
